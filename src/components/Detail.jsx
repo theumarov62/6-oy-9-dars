@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-export default function CountryDetail() {
+export default function Detail() {
   const { name } = useParams();
   const [country, setCountry] = useState(null);
   const navigate = useNavigate();
