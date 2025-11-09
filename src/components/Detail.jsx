@@ -20,9 +20,9 @@ export default function Detail() {
     <div className="min-h-screen bg-gray-50 flex justify-center items-center p-10">
       <button
         onClick={() => navigate("/")}
-        className="self-start mb-6 bg-gray-200 px-4 cursor-pointer py-2 rounded hover:bg-gray-300 transition"
+        className="self-start mb-6 absolute bg-gray-200 px-4 cursor-pointer py-2 rounded hover:bg-gray-300 transition"
       >
-        Orqaga
+        Comeback
       </button>
       <div className="bg-white shadow-xl rounded-2xl p-8 max-w-md w-full text-center">
         <img
