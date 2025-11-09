@@ -36,19 +36,19 @@ export default function CountryDetail() {
 
         <div className="space-y-2 text-gray-700 text-lg">
           <p>
-            <span className="font-semibold">Rasmiy nom:</span>{" "}
+            <span className="font-semibold">Rasmiy nom:</span>
             {country.name.official}
           </p>
           <p>
-            <span className="font-semibold">Poytaxt:</span>{" "}
+            <span className="font-semibold">Poytaxt:</span>
             {country.capital?.[0]}
           </p>
           <p>
             <span className="font-semibold">Region:</span> {country.region}
           </p>
           <p>
-            <span className="font-semibold">Aholi:</span>{" "}
-            {country.population.toLocaleString()}
+            <span className="font-semibold">Aholi:</span>
+            {country.population}
           </p>
         </div>
       </div>
