@@ -13,7 +13,7 @@ export default function CountryDetail() {
 
   if (!country)
     return (
-      <h2 className="text-center font-[80px] mt-[400px]">Yuklanmoqda...</h2>
+      <h2 className="text-center font-[80px] mt-[400px]">Yuklanyopti . . .</h2>
     );
 
   return (
@@ -36,18 +36,18 @@ export default function CountryDetail() {
 
         <div className="space-y-2 text-gray-700 text-lg">
           <p>
-            <span className="font-semibold">Rasmiy nom:</span>
+            <span className="font-semibold">Davlat nomi:</span>
             {country.name.official}
           </p>
           <p>
-            <span className="font-semibold">Poytaxt:</span>
+            <span className="font-semibold">Poytaxti:</span>
             {country.capital?.[0]}
           </p>
           <p>
-            <span className="font-semibold">Region:</span> {country.region}
+            <span className="font-semibold">Regioni:</span> {country.region}
           </p>
           <p>
-            <span className="font-semibold">Aholi:</span>
+            <span className="font-semibold">Aholisi:</span>
             {country.population}
           </p>
         </div>
