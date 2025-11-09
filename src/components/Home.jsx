@@ -42,6 +42,7 @@ export default function Home() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {currentCountries.map((country) => (
+          // Card
           <div
             key={country.name.common}
             onClick={() => navigate(`/country/${country.name.common}`)}
@@ -57,9 +58,7 @@ export default function Home() {
             </h2>
             <p className="text-gray-600">Region: {country.region}</p>
             <p className="text-gray-600">Poytaxt: {country.capital?.[0]}</p>
-            <p className="text-gray-600">
-              Aholi: {country.population.toLocaleString()}
-            </p>
+            <p className="text-gray-600">Aholi: {country.population}</p>
           </div>
         ))}
       </div>

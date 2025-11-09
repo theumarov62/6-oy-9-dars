@@ -20,7 +20,7 @@ export default function CountryDetail() {
     <div className="min-h-screen bg-gray-50 flex justify-center items-center p-10">
       <button
         onClick={() => navigate("/")}
-        className="self-start mb-6 bg-gray-200 px-4 py-2 rounded hover:bg-gray-300 transition"
+        className="self-start mb-6 bg-gray-200 px-4 cursor-pointer py-2 rounded hover:bg-gray-300 transition"
       >
         Orqaga
       </button>
@@ -36,7 +36,7 @@ export default function CountryDetail() {
 
         <div className="space-y-2 text-gray-700 text-lg">
           <p>
-            <span className="font-semibold">Davlat nomi:</span>
+            <span className="font-semibold">Nomi:</span>
             {country.name.official}
           </p>
           <p>
