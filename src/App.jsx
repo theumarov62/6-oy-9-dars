@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
-import CountryDetail from "./components/Detail";
+import Detail from "./components/Detail";
 
 export default function App() {
   return (
