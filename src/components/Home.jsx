@@ -42,7 +42,7 @@ export default function Home() {
     <div className="min-h-screen bg-gray-50 p-10">
       {/* Title */}
       <h1 className="text-3xl font-bold text-center text-gray-800 mb-10">
-        Davlatlar ro'yxati
+        Where in the world?
       </h1>
 
       {/* Barcha Cardlar */}

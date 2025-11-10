@@ -14,7 +14,7 @@ export default function Detail() {
   }, [name]);
 
   // Loader
-  // !country (country.lentgh === 0) bo'lsa return ichidagi ma'lumot chiqadi
+  // !country '!' = (country.lentgh === 0) bo'lsa return ichidagi ma'lumot chiqadi va undan pastdagi tanlangan card ma'lumot chiqdimidi
   if (!country)
     return (
       <h2 className="text-center text-[30px] mt-[400px]">Yuklanyopti . . .</h2>
