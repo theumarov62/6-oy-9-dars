@@ -53,7 +53,9 @@ export default function Detail() {
             <span className="font-bold">Regioni: {country.region}</span>
           </p>
           <p>
-            <span className="font-bold">Aholisi: {country.population}</span>
+            <span className="font-bold">
+              Aholisi: {country.population.toLocaleString()}
+            </span>
           </p>
         </div>
       </div>

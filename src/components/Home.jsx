@@ -64,7 +64,9 @@ export default function Home() {
             </h2>
             <p className="text-gray-600">Region: {country.region}</p>
             <p className="text-gray-600">Poytaxt: {country.capital?.[0]}</p>
-            <p className="text-gray-600">Aholi: {country.population}</p>
+            <p className="text-gray-600">
+              Aholi: {country.population.toLocaleString()}
+            </p>
           </div>
         ))}
       </div>
