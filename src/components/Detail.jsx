@@ -11,7 +11,7 @@ export default function Detail() {
     fetch(`https://restcountries.com/v3.1/name/${name}`)
       .then((res) => res.json())
       .then((data) => setCountry(data[0]));
-  }, [name]);
+  }, []);
 
   // Loader
   // !country '!' = (country.lentgh === 0) bo'lsa return ichidagi ma'lumot chiqadi va undan pastdagi tanlangan card ma'lumot chiqdimidi
