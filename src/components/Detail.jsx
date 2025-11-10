@@ -47,7 +47,7 @@ export default function Detail() {
             <span className="font-semibold">Nomi: {country.name.official}</span>
           </p>
           <p>
-            <span className="font-bold">Poytaxti: {country.capital?.[0]}</span>
+            <span className="font-bold">Poytaxti: {country.capital}</span>
           </p>
           <p>
             <span className="font-bold">Regioni: {country.region}</span>
