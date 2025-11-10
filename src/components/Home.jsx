@@ -18,6 +18,9 @@ export default function Home() {
       .then((data) => setCountries(data));
   }, []);
 
+  // Pagination qismi
+  // meniki emas AI
+  // aynan pagination qism
   const lastIndex = currentPage * countriesPerPage;
   const firstIndex = lastIndex - countriesPerPage;
   const currentCountries = countries.slice(firstIndex, lastIndex);
@@ -33,16 +36,19 @@ export default function Home() {
   const prevPage = () => {
     if (currentPage > 1) setCurrentPage((prev) => prev - 1);
   };
+  // Pagination logikasi tugadi :)
 
   return (
     <div className="min-h-screen bg-gray-50 p-10">
+      {/* Title */}
       <h1 className="text-3xl font-bold text-center text-gray-800 mb-10">
         Davlatlar ro'yxati
       </h1>
 
+      {/* Barcha Cardlar */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {currentCountries.map((country) => (
-          // Card
+          // Umumiy card
           <div
             key={country.name.common}
             onClick={() => navigate(`/country/${country.name.common}`)}
@@ -63,6 +69,8 @@ export default function Home() {
         ))}
       </div>
 
+      {/* Pagination qism */}
+      {/* meniki emas AI */}
       <div className="flex justify-center items-center gap-4 mt-10">
         <button
           onClick={prevPage}
@@ -84,6 +92,7 @@ export default function Home() {
           Keyingi
         </button>
       </div>
+      {/* Pagination ishlatish qismi tugadi */}
     </div>
   );
 }
